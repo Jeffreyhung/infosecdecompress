@@ -16,7 +16,7 @@ module.exports = {
       path: '/'
     },
     {
-      label: '關於我',
+      label: '關於我們',
       path: '/pages/about'
     },
     {
@@ -25,7 +25,7 @@ module.exports = {
     }
   ],
   author: {
-    name: 'Dante Hung',
+    name: '資安解壓縮',
     photo: '/photo.jpg',
     bio: '歡迎來到資安解壓縮',
     contacts: {

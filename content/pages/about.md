@@ -1,5 +1,5 @@
 ---
-title: "關於我"
+title: "關於我們"
 template: "page"
 socialImage: "/media/image-2.jpg"
 ---
