@@ -1,43 +1,43 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://jeffreyhung.com',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: '資安解壓縮',
+  subtitle: '',
   copyright: '© All rights reserved.',
   disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  postsPerPage: 10,
+  googleAnalyticsId: 'UA-145232119-2',
   useKatex: false,
   menu: [
     {
-      label: 'Articles',
+      label: '文章列表',
       path: '/'
     },
     {
-      label: 'About me',
-      path: '/pages/about'
+      label: '關於我',
+      path: 'https://jeffreyhung.com'
     },
     {
-      label: 'Contact me',
+      label: '聯絡資訊',
       path: '/pages/contacts'
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Dante Hung',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: '歡迎來到資安解壓縮',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'infosecdecompress@jeffreyhung.com',
+      facebook: '',
+      telegram: '',
+      twitter: '',
+      github: 'https://github.com/Jeffreyhung',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'https://www.linkedin.com/in/chi-heng-hung/',
+      instagram: '',
       line: '',
       gitlab: '',
       weibo: '',
