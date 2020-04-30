@@ -17,7 +17,7 @@ module.exports = {
     },
     {
       label: '關於我',
-      path: 'https://jeffreyhung.com'
+      path: '/pages/about'
     },
     {
       label: '聯絡資訊',
