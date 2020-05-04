@@ -3,7 +3,7 @@ title: "聯絡資訊"
 template: "page"
 ---
 
-<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+<form name="Contact Form" method="POST" data-netlify="true" data-netlify-recaptcha="true">
   <p>
     <label>姓名：<input type="text" name="name" /></label>   
   </p>
