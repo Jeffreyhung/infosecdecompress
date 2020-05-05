@@ -5,7 +5,6 @@ slug: contacts
 draft: false
 ---
  <form name="Contact Form" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/pages/success">
-<div netlify-recaptcha></div>
   <p>
     <label>姓名：<input type="text" name="name" /></label>   
   </p>
@@ -14,6 +13,7 @@ draft: false
   </p>
     <label>想說的話：<textarea name="message"></textarea></label>
   </p>
+<div data-netlify-recaptcha="true"></div>
   <p>
     <button type="submit">傳送</button>
   </p>
