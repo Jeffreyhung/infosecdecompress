@@ -4,7 +4,9 @@ title: 聯絡資訊
 slug: contacts
 draft: false
 ---
- <form name="Contact Form" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/pages/success">
+有任何疑問或是想法歡迎寄信到 [infosecdecompress@jeffreyhung.com](mailto:infosecdecompress@jeffreyhung.com) 與我們聯繫，或是利用下面的表單傳送訊息給我們。
+
+<form name="Contact Form" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/pages/success">
   <p>
     <label>姓名：<input type="text" name="name" /></label>   
   </p>
