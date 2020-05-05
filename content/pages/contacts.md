@@ -4,7 +4,8 @@ title: 聯絡資訊
 slug: contacts
 draft: false
 ---
-<form name="Contact Form" method="POST" data-netlify="true" action="/pages/success">
+ <form name="Contact Form" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/pages/success">
+<div netlify-recaptcha></div>
   <p>
     <label>姓名：<input type="text" name="name" /></label>   
   </p>
