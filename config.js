@@ -26,8 +26,9 @@ module.exports = {
   ],
   author: {
     name: '資安解壓縮',
+	english: 'Infosec Decompress',
     photo: '/photo.jpg',
-    bio: '歡迎來到資安解壓縮',
+    bio: '歡迎來到 資安解壓縮',
     contacts: {
       email: 'infosecdecompress@jeffreyhung.com',
       facebook: '',
@@ -43,7 +44,7 @@ module.exports = {
       weibo: '',
       codepen: '',
       youtube: '',
-      soundcloud: '',
+      soundcloud: 'Infosec Decompress',
     }
   }
 };
