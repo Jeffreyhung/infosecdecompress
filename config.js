@@ -44,7 +44,7 @@ module.exports = {
       weibo: '',
       codepen: '',
       youtube: '',
-      soundcloud: 'Infosec Decompress',
+      soundcloud: '',
     }
   }
 };
