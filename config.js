@@ -31,20 +31,19 @@ module.exports = {
     bio: '歡迎來到 資安解壓縮 這是一個談論資訊安全相關主題的Podcast，希望能透過這個節目幫助大家更了解資訊安全，也更知道怎麼保護自己。',
     contacts: {
       email: 'infosecdecompress@jeffreyhung.com',
+      github: 'Jeffreyhung',
+      rss: 'https://open.firstory.me/rss/user/ck97a4iy0q0fi08739ppcezq7',
+      linkedin: 'chi-heng-hung',
+      firstory: 'infosecdecompress',
+      spotify: '6bMhZ2VerzSvoDDpLaNjaH',
+      applepodcast: 'infosecdecompress',
       facebook: '',
       telegram: '',
       twitter: '',
-      github: 'Jeffreyhung',
-      rss: 'https://open.firstory.me/rss/user/ck97a4iy0q0fi08739ppcezq7',
-      vkontakte: '',
-      linkedin: 'chi-heng-hung',
       instagram: '',
-      line: '',
-      gitlab: '',
-      weibo: '',
       codepen: '',
       youtube: '',
-      soundcloud: '',
+      soundcloud: ''
     }
   }
 };

@@ -20,13 +20,12 @@ const useSiteMetadata = () => {
                 instagram
                 email
                 rss
-                vkontakte
-                line
-                gitlab
-                weibo
                 codepen
                 youtube
                 soundcloud
+                firstory
+                spotify
+                applepodcast
               }
             }
             menu {

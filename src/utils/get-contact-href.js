@@ -9,9 +9,6 @@ const getContactHref = (name: string, contact: string) => {
     case 'github':
       href = `https://github.com/${contact}`;
       break;
-    case 'vkontakte':
-      href = `https://vk.com/${contact}`;
-      break;
     case 'telegram':
       href = `https://t.me/${contact}`;
       break;
@@ -24,17 +21,17 @@ const getContactHref = (name: string, contact: string) => {
     case 'instagram':
       href = `https://www.instagram.com/${contact}`;
       break;
-    case 'line':
-      href = `line://ti/p/${contact}`;
-      break;
     case 'facebook':
       href = `https://www.facebook.com/${contact}`;
       break;
-    case 'gitlab':
-      href = `https://www.gitlab.com/${contact}`;
+    case 'firstory':
+      href = `https://open.firstory.me/user/${contact}`;
       break;
-    case 'weibo':
-      href = `https://www.weibo.com/${contact}`;
+    case 'spotify':
+      href = `https://open.spotify.com/show/${contact}`;
+      break;
+    case 'applepodcast':
+      href = `https://podcasts.apple.com/us/podcast/${contact}`;
       break;
     case 'codepen':
       href = `https://www.codepen.io/${contact}`;
