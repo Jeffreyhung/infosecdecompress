@@ -33,7 +33,7 @@ module.exports = {
       email: 'infosecdecompress@jeffreyhung.com',
       github: 'Jeffreyhung',
       rss: 'https://open.firstory.me/rss/user/ck97a4iy0q0fi08739ppcezq7',
-      linkedin: 'chi-heng-hung',
+      linkedin: '',
       firstory: 'infosecdecompress',
       spotify: '6bMhZ2VerzSvoDDpLaNjaH',
       applepodcast: 'infosecdecompress',
