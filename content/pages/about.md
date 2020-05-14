@@ -1,9 +1,9 @@
 ---
-title: "關於我們"
-template: "page"
-socialImage: "/media/image-2.jpg"
+template: page
+title: 關於我們
+socialImage: /media/image-2.jpg
+slug: about
+draft: false
 ---
-
-![photo](/media/image-2.jpg)
 
 *To be continued*
