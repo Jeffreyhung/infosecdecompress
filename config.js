@@ -36,7 +36,7 @@ module.exports = {
       linkedin: '',
       firstory: 'infosecdecompress',
       spotify: '6bMhZ2VerzSvoDDpLaNjaH',
-      applepodcast: 'infosecdecompress',
+      applepodcast: 'id1513276667',
       facebook: '',
       telegram: '',
       twitter: '',
