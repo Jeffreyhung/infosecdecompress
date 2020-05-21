@@ -1,6 +1,6 @@
 {
   "version": "3.0.3",
-  "name": "gatsby-starter-lumen",
+  "name": "infosecdecompress",
   "description": "A minimal, lightweight and mobile-first starter for creating blazing-fast static blogs",
   "main": "n/a",
   "scripts": {
@@ -16,8 +16,8 @@
     "test:coverage": "jest --coverage --config ./jest/jest-config.js",
     "test:watch": "jest --watch --config ./jest/jest-config.js"
   },
-  "repository": "https://github.com/alxshelepenok/gatsby-starter-lumen",
-  "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
+  "repository": "https://github.com/Jeffreyhung/infosecdecompress",
+  "author": "Jeffrey Hung <infosecdecompress@jeffreyhung.com>",
   "license": "MIT",
   "keywords": [
     "gatsby",
@@ -35,7 +35,8 @@
     "react",
     "theme",
     "starter",
-    "disqus"
+    "disqus",
+	"informationsecurity"
   ],
   "dependencies": {
     "bluebird": "^3.7.2",
