@@ -16,10 +16,6 @@ module.exports = {
       path: '/'
     },
     {
-      label: '關於我們',
-      path: '/pages/about'
-    },
-    {
       label: '聯絡資訊',
       path: '/pages/contacts'
     }
