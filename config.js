@@ -40,7 +40,7 @@ module.exports = {
       facebook: '',
       telegram: '',
       twitter: '',
-      instagram: '',
+      instagram: 'infosec.zip',
       codepen: '',
       youtube: '',
       soundcloud: ''
