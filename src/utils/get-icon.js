@@ -47,6 +47,9 @@ const getIcon = (name: string) => {
     case 'applepodcast':
       icon = ICONS.APPLEPODCAST;
       break;
+    case 'googlepodcast':
+      icon = ICONS.GOOGLEPODCAST;
+      break;
     default:
       icon = {};
       break;

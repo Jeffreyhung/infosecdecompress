@@ -22,9 +22,9 @@ module.exports = {
   ],
   author: {
     name: '資安解壓縮',
-	english: 'Infosec Decompress',
+	  english: 'Infosec Decompress',
     photo: '/photo.jpg',
-    bio: '歡迎來到 資安解壓縮 這是一個談論資訊安全相關主題的Podcast，希望能透過這個節目幫助大家更了解資訊安全，也更知道怎麼保護自己。',
+    bio: '這是一個談論資訊安全相關主題的Podcast，簡單的文字幫助大家更了解資訊安全是什麼以及在幹嘛，幫助大家更知道怎麼保護自己。',
     contacts: {
       email: 'infosecdecompress@jeffreyhung.com',
       github: 'Jeffreyhung',
@@ -39,7 +39,8 @@ module.exports = {
       instagram: 'infosec.zip',
       codepen: '',
       youtube: '',
-      soundcloud: ''
+      soundcloud: '',
+      googlepodcast: 'aHR0cHM6Ly9vcGVuLmZpcnN0b3J5Lm1lL3Jzcy91c2VyL2NrOTdhNGl5MHEwZmkwODczOXBwY2V6cTc'
     }
   }
 };

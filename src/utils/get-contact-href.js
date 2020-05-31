@@ -31,7 +31,7 @@ const getContactHref = (name: string, contact: string) => {
       href = `https://open.spotify.com/show/${contact}`;
       break;
     case 'applepodcast':
-      href = `https://podcasts.apple.com/us/podcast/${contact}`;
+      href = `https://podcasts.apple.com/tw/podcast/${contact}`;
       break;
     case 'codepen':
       href = `https://www.codepen.io/${contact}`;
@@ -41,6 +41,9 @@ const getContactHref = (name: string, contact: string) => {
       break;
     case 'soundcloud':
       href = `https://soundcloud.com/${contact}`;
+      break;
+    case 'googlepodcast':
+      href = `https://podcasts.google.com/?feed=${contact}`;
       break;
     default:
       href = contact;
