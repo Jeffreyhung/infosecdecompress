@@ -33,7 +33,7 @@ module.exports = {
       firstory: 'infosecdecompress',
       spotify: '6bMhZ2VerzSvoDDpLaNjaH',
       applepodcast: 'id1513276667',
-      facebook: '',
+      facebook: '資安解壓縮-Infosec-Decompress-110703450657284',
       telegram: '',
       twitter: '',
       instagram: 'infosec.zip',
