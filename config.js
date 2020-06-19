@@ -18,6 +18,10 @@ module.exports = {
     {
       label: '聯絡資訊',
       path: '/pages/contacts'
+    },
+    {
+      label: '創作者工具包',
+      path: '/pages/creators_toolkit'
     }
   ],
   author: {
