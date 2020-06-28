@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ccc4aad7-66d5-47b7-b676-f9ddadcb529f/deploy-status)](https://app.netlify.com/sites/infosecdecompress/deploys)
+
 ## Credits
 Great thanks to Contributors of the [Lumen Theme](https://github.com/alxshelepenok/gatsby-starter-lumen/) for the awesome theme
 
