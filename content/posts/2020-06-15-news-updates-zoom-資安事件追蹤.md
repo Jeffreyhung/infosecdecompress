@@ -14,7 +14,7 @@ tags:
   - privacy
   - news updates
 ---
-![](/media/3dbcc402-b483-4a09-b580-793568e9f0dc.png)
+![](/media/zoom_cover.png)
 
 ## 前情提要 - 先前的爭議
 
