@@ -43,7 +43,24 @@ Mozilla將Firefox Send 下架，目前正在針對濫用情況進行調查
 >
 > (翻譯) "在我們將Firefox Send改善的同時，我們會將Firefox Send暫時下架。再重新上架前，我們將會新增濫用回報機制，並要求用戶登入Firefox帳號來使用Firefox Send。" - Mozilla對 ZDNet (美國科技新聞網)採訪的回應
 
-資料/新聞來源
+## 替代方案
+
+[MyAirBridge](https://www.myairbridge.com/)
+
+* 可透過Email / 連結分享檔案
+* 免費板自動於檔案上傳後三天刪除
+* 無法設定密碼
+* 最大可傳輸檔案大小為20G
+
+[Smash](https://fromsmash.com/)
+
+* 可購過Email / 連結 / Slack分享檔案
+* 可設定密碼保護/時間限制
+* 無檔案大小限制
+* 需輸入Email (可提供假Email)
+* 可同時分享多個檔案。
+
+## 資料/新聞來源
 
 * [ZDNet - Mozilla suspends Firefox Send service while it addresses malware abuse](https://www.zdnet.com/article/mozilla-suspends-firefox-send-service-while-it-addresses-malware-abuse/)
 * [Mozilla turns off “Firefox Send” following malware abuse reports](https://nakedsecurity.sophos.com/2020/07/08/mozilla-turns-off-firefox-send-following-malware-abuse-reports/)
