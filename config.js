@@ -31,7 +31,7 @@ module.exports = {
     bio: '這是一個談論資訊安全相關主題的Podcast，利用簡單的文字幫助大家更了解資訊安全是什麼、在幹嘛以及怎麼保護自己。',
     contacts: {
       email: 'contact@infosecdecompress.com',
-      github: 'Jeffreyhung',
+      github: '',
       rss: 'https://open.firstory.me/rss/user/ck97a4iy0q0fi08739ppcezq7',
       linkedin: '',
       firstory: 'infosecdecompress',
