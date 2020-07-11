@@ -57,7 +57,7 @@ button[type=submit]:hover,focus {
 
 
 
-有任何疑問或是想法歡迎寄信到 [infosecdecompress@jeffreyhung.com](mailto:infosecdecompress@jeffreyhung.com) 與我們聯繫，或是利用下面的表單傳送訊息給我們。
+有任何疑問或是想法歡迎寄信到 [contact@infosecdecompress.com](mailto:contact@infosecdecompress.com) 與我們聯繫，或是利用下面的表單傳送訊息給我們。
 <br/><br/><br/>
 <h2>傳送訊息</h2>
 
