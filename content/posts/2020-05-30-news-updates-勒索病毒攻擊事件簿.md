@@ -13,13 +13,15 @@ tags:
 <style>
 img{
   width: 80%;
-  text-align: center; 
+  text-align: center;
+ 
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 </style>
-![](/media/img_4626.jpg)
+
+![](/media/ransomware_cover.jpg)
 
 ## 什麼是勒索病毒?
 
