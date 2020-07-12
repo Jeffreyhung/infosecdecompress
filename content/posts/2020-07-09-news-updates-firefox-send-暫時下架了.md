@@ -21,7 +21,7 @@ tags:
 
 有心人士利用Firefox Send散播惡意程式，包含幾個有名的惡意組織FIN7, REVil (Sodinokibi), Ursnif (Dreambot), 和 Zloader。
 
-![](/media/firefoxsend_twitter_zdnet.png)
+![](/media/firefoxsend_twitter_zdnet.jpg)
 
 圖片來源：[ZDNet - Mozilla suspends Firefox Send service while it addresses malware abuse](https://www.zdnet.com/article/mozilla-suspends-firefox-send-service-while-it-addresses-malware-abuse/)
 
@@ -35,7 +35,7 @@ tags:
 
 Mozilla將Firefox Send 下架，目前正在針對濫用情況進行調查
 
-![](/media/firefoxsend_suspend.png)
+![](/media/firefoxsend_suspend.jpg)
 
 ## 未來規劃
 
