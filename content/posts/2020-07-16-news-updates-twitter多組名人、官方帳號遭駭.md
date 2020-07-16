@@ -35,7 +35,7 @@ Twitter在台灣凌晨四點(美西時間7/15 下午四點左右)，多組名人
 
 ![](/media/twitter_hacked_btcrecord.png)
 
-目前事發的原因尚不明確，有的人表示自己有使用多重驗證機制，帳號仍遭害，因此在我看來不像是單純的帳密被盜或是[帳號填充攻擊](https://infosecdecompress.com/posts/EP3-why-does-password-has-to-be-so-complicated#%E5%B8%B8%E8%A6%8B%E5%AF%86%E7%A2%BC%E6%94%BB%E6%93%8A%E6%89%8B%E6%B3%95)。
+目前事發的原因尚不明確，有的人表示自己有使用多重驗證機制，帳號仍遭駭，因此在我看來不像是單純的帳密被盜或是[帳號填充攻擊](https://infosecdecompress.com/posts/EP3-why-does-password-has-to-be-so-complicated#%E5%B8%B8%E8%A6%8B%E5%AF%86%E7%A2%BC%E6%94%BB%E6%93%8A%E6%89%8B%E6%B3%95)。
 
 有人表示此次事件為Twitter內部員工遭駭，駭客利用員工的權限來在那些名人帳號上發文，但此聞**尚未被證實，還只是謠言**
 
