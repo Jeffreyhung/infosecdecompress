@@ -5,7 +5,7 @@ slug: newsupdates_twitter_hacked_phishing_incident
 draft: false
 date: 2020-07-16T02:06:20.366Z
 description: |-
-  [2020/07/15 11:30 CDT Update: 新增Twitter官方回覆]  
+  [2020/07/15 23:30 CDT Update: 新增Twitter官方回覆]  
   Twitter在台灣凌晨四點左右，多組名人帳密被盜，攻擊者利用這些帳號散播釣魚內容。
 category: NEWSUPDATES
 tags:
@@ -55,7 +55,7 @@ Twitter正在調查事情事發，目前已關閉推文、重設密碼等部分�
 
 就像之前提過的，太美好的事情往往不會是真的，看到這種大放送的內容時要多想兩下。我們無法阻止駭客入侵別人的系統或是盜別人的帳號，但我們可以學著不落入駭客的圈套和騙局中。
 
-## Update: Twitter 官方回覆(2020/07/15 11:30 CDT)
+## Update: Twitter 官方回覆(2020/07/15 23:30 CDT)
 
 Twitter 官方已證實，員工內部帳號遭駭是造成這次事件的原因。
 
