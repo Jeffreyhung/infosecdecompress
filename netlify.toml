@@ -6,6 +6,16 @@
   YARN_FLAGS = "--no-ignore-optional"
 [[plugins]]
   package = "@netlify/plugin-sitemap"
+	[plugins.inputs]
+	buildDir = "public"
+	exclude = [
+	'/admin',
+	'https://infosecdecompress.com/offline-plugin-app-shell-fallback',
+	'404',
+	'tag',
+	# By Glob pattern
+	'**/**/child-one.html'
+	]
 [[plugins]]
   package = "netlify-plugin-submit-sitemap"
 	[plugins.inputs]
@@ -19,3 +29,5 @@
 		"bing",
 		"yandex"
 	]
+[[plugins]]
+	package = "./plugins/netlify-purge-cloudflare-on-deploy"
