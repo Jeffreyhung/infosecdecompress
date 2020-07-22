@@ -150,6 +150,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
+		exclude: [`/404`, `/tag/*`, `/admin`,`/offline-plugin-app-shell-fallback`,``],
         query: `
           {
             site {
