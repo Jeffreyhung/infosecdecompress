@@ -11,8 +11,8 @@
 	exclude = [
 	'/admin',
 	'https://infosecdecompress.com/offline-plugin-app-shell-fallback',
-	'404',
-	'tag',
+	'/404',
+	'/tag/**',
 	# By Glob pattern
 	'**/**/child-one.html'
 	]
@@ -27,7 +27,7 @@
 	providers = [
 		"google",
 		"bing",
-		"yandex"
+		"yahoo"
 	]
 [[plugins]]
 	package = "netlify-purge-cloudflare-on-deploy"
