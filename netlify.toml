@@ -9,7 +9,8 @@
 	[plugins.inputs]
 	buildDir = "public"
 	exclude = [
-	'/admin',
+	'./static/admin',
+	'./static/media',
 	'https://infosecdecompress.com/offline-plugin-app-shell-fallback',
 	'/404',
 	'/tag/**',
@@ -26,8 +27,7 @@
 	# Enabled providers to submit sitemap to (optional, default = 'google', 'bing', 'yandex'). Possible providers are currently only 'google', 'bing', 'yandex'.
 	providers = [
 		"google",
-		"bing",
-		"yahoo"
+		"bing"
 	]
 [[plugins]]
 	package = "netlify-purge-cloudflare-on-deploy"
