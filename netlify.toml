@@ -9,11 +9,10 @@
 	[plugins.inputs]
 	buildDir = "public"
 	exclude = [
-	'./static/admin',
-	'./static/media',
+	'**/admin',
 	'https://infosecdecompress.com/offline-plugin-app-shell-fallback',
-	'/404',
-	'/tag/**',
+	'**/404',
+	'**/tag/**',
 	# By Glob pattern
 	'**/**/child-one.html'
 	]
