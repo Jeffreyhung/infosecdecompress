@@ -21,7 +21,6 @@ const useSiteMetadata = () => {
                 github
                 rss
                 email
-                
                 twitter
                 telegram
                 codepen
