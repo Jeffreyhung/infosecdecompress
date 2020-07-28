@@ -28,7 +28,7 @@ module.exports = {
     name: '資安解壓縮',
 	  english: 'Infosec Decompress',
     photo: '/photo.jpg',
-    bio: '這是一個談論資訊安全相關主題的Podcast，利用簡單的文字幫助大家更了解資訊安全是什麼、在幹嘛以及怎麼保護自己。',
+    bio: '資安解壓縮是第一個以資安為主題的中文Podcast節目，希望可以用最好理解的方式幫助大家更了結資訊安全，也更懂得保護自己。',
     contacts: {
       email: 'contact@infosecdecompress.com',
       github: '',
