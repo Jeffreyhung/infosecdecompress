@@ -9,6 +9,7 @@ module.exports = {
     url: siteConfig.url,
     title: siteConfig.title,
     subtitle: siteConfig.subtitle,
+    description: siteConfig.description,
     copyright: siteConfig.copyright,
     disqusShortname: siteConfig.disqusShortname,
     menu: siteConfig.menu,
@@ -150,7 +151,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-		exclude: [`/404`, `/tag/*`, `/admin`,`/offline-plugin-app-shell-fallback`,``],
+		exclude: [`/404`, `/tag/*`, `/admin`,`/offline-plugin-app-shell-fallback`,`404`],
         query: `
           {
             site {
@@ -160,7 +161,7 @@ module.exports = {
             }
             allSitePage(
               filter: {
-                path: { regex: "/^(?!/404/|/404.html|/dev-404-page/)/" }
+                path: { regex: "/^(?!/404/|/404.html|/dev-404-page/|/404)/" }
               }
             ) {
               edges {
