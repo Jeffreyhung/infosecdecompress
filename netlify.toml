@@ -9,20 +9,6 @@
 [[plugins]]
   package = "netlify-purge-cloudflare-on-deploy"
 [[plugins]]
-  package = "@netlify/plugin-sitemap"
-  [plugins.inputs]
-  buildDir = "public"
-  exclude = [
-    './static/admin/',
-    './static/admin/**',
-    '**/admin/',
-    '**/**/admin/',
-    # By file Path
-    './build-dir/path-to/file.html',
-    # By Glob pattern
-    '**/**/child-one.html'
-  ]
-[[plugins]]
   package = "netlify-plugin-submit-sitemap"
 	[plugins.inputs]
 	baseUrl = "https://infosecdecompress.com"
