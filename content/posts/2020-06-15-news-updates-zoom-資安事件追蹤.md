@@ -7,7 +7,7 @@ date: 2020-06-15T11:04:02.777Z
 description: |-
   [2020.06.17 Update Zoom的最新公告 ]  
   前陣子吵得沸沸揚揚的Zoom爭議事件，最近又因為六四紀念事件重新引起關注，我們簡單整理了一下發生了什麼事，一起來了解一下吧～
-category: NewsUpdates
+category: newsupdates
 tags:
   - zoom
   - e2ee

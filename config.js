@@ -5,7 +5,6 @@ module.exports = {
   pathPrefix: '/',
   title: '資安解壓縮',
   subtitle: '',
-  description: '第一個以資安為主題的中文Podcast節目，希望可以用最好理解的方式幫助大家更了結資訊安全，也更懂得保護自己',
   copyright: '©2020 資安解壓縮 Infosec Decompress',
   disqusShortname: '',
   postsPerPage: 10,
