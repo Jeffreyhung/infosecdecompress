@@ -61,7 +61,7 @@ button[type=submit]:hover,focus {
 <br/><br/><br/>
 <h2>傳送訊息</h2>
 
-<form name="Contact Form" method="POST" data-netlify-recaptcha="true" data-netlify="true" action="/pages/success">
+<form name="Contact Form" method="POST" data-netlify="true" action="/pages/success">
   <p>
     <label>姓名：</label><input type="text" name="name"/>
   </p>
@@ -70,7 +70,6 @@ button[type=submit]:hover,focus {
   </p>
     <label>想說的話：</label><textarea name="message"></textarea>
   </p>
-<div data-netlify-recaptcha="true"></div>
   <p>
     <button type="submit">傳送</button>
   </p>
