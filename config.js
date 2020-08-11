@@ -44,7 +44,7 @@ module.exports = {
       applepodcast: 'id1513276667',
       googlepodcast: 'aHR0cHM6Ly9vcGVuLmZpcnN0b3J5Lm1lL3Jzcy91c2VyL2NrOTdhNGl5MHEwZmkwODczOXBwY2V6cTc',
       kkbox: 'GncGPpX5JfDFrqZQiL',
-      youtube: '',
+      youtube: 'UCfqZseDiubhus1Bb75p5fdg',
       facebook: 'infosecdecompress',
       instagram: 'infosec.zip',
       twitter: 'InfoSec_zip',
