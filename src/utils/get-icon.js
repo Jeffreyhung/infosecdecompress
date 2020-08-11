@@ -50,6 +50,9 @@ const getIcon = (name: string) => {
     case 'googlepodcast':
       icon = ICONS.GOOGLEPODCAST;
       break;
+    case 'kkbox':
+      icon = ICONS.KKBOX;
+      break;
     default:
       icon = {};
       break;

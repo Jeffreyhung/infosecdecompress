@@ -45,6 +45,9 @@ const getContactHref = (name: string, contact: string) => {
     case 'googlepodcast':
       href = `https://podcasts.google.com/?feed=${contact}`;
       break;
+    case 'kkbox':
+      href = `https://podcast.kkbox.com/channel/${contact}`;
+      break;
     default:
       href = contact;
       break;

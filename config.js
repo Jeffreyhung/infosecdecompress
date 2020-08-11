@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://infosecdecompress.com',
   pathPrefix: '/',
   title: '資安解壓縮',
-  subtitle: '',
+  subtitle: 'infosec Decompress',
   copyright: '©2020 資安解壓縮 Infosec Decompress',
   disqusShortname: '',
   postsPerPage: 10,
@@ -39,21 +39,22 @@ module.exports = {
     photo: '/photo.jpg',
     bio: '資安解壓縮是第一個以資安為主題的中文Podcast節目，希望可以用最好理解的方式幫助大家更了結資訊安全，也更懂得保護自己。',
     contacts: {
-      email: 'contact@infosecdecompress.com',
-      github: '',
-      rss: 'https://open.firstory.me/rss/user/ck97a4iy0q0fi08739ppcezq7',
-      linkedin: 'company/infosecdecompress',
       firstory: 'infosecdecompress',
       spotify: '6bMhZ2VerzSvoDDpLaNjaH',
       applepodcast: 'id1513276667',
-      facebook: 'infosecdecompress',
-      telegram: '',
-      twitter: '',
-      instagram: 'infosec.zip',
-      codepen: '',
+      googlepodcast: 'aHR0cHM6Ly9vcGVuLmZpcnN0b3J5Lm1lL3Jzcy91c2VyL2NrOTdhNGl5MHEwZmkwODczOXBwY2V6cTc',
+      kkbox: 'GncGPpX5JfDFrqZQiL',
       youtube: '',
-      soundcloud: '',
-      googlepodcast: 'aHR0cHM6Ly9vcGVuLmZpcnN0b3J5Lm1lL3Jzcy91c2VyL2NrOTdhNGl5MHEwZmkwODczOXBwY2V6cTc'
+      facebook: 'infosecdecompress',
+      instagram: 'infosec.zip',
+      twitter: 'InfoSec_zip',
+      linkedin: 'company/infosecdecompress',
+      rss: 'https://open.firstory.me/rss/user/ck97a4iy0q0fi08739ppcezq7',
+      email: 'contact@infosecdecompress.com',
+      github: '',
+      telegram: '',
+      codepen: '',
+      soundcloud: ''
     }
   }
 };

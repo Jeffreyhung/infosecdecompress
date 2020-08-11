@@ -16,17 +16,18 @@ const useSiteMetadata = () => {
                 spotify
                 applepodcast
                 googlepodcast
-                instagram
+                kkbox
+                youtube
                 facebook
-                github
+                instagram
+                twitter
+                linkedin
                 rss
                 email
-                twitter
                 telegram
                 codepen
-                youtube
+                github
                 soundcloud
-                linkedin
               }
             }
             menu {
