@@ -3,8 +3,6 @@
 ## Credits
 Great thanks to Contributors of the [Lumen Theme](https://github.com/alxshelepenok/gatsby-starter-lumen/) for the awesome theme
 
-Nature graphic by [Anna Bearne](https://www.behance.net/annabearne) from [Noun Project](https://thenounproject.com/) is licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/us/legalcode).
-
 ## License
 Excepted where otherwise noted, content on [資安解壓縮 Infosec Decompress](https://infosecdecompress.com) is Copyright of Carol & Jeff 
 - - -
