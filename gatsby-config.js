@@ -217,11 +217,11 @@ module.exports = {
       options: {
         disableOnDev: false,
         reportOnly: false, // Changes header to Content-Security-Policy-Report-Only for csp testing purposes
-        mergeScriptHashes: true, // you can disable scripts sha256 hashes
-        mergeStyleHashes: true, // you can disable styles sha256 hashes
+        mergeScriptHashes: false, // you can disable scripts sha256 hashes
+        mergeStyleHashes: false, // you can disable styles sha256 hashes
         mergeDefaultDirectives: true,
         directives: {
-          "script-src": "'self' www.google-analytics.com wwwgoogletagmanager.com fonts.googleapis.com fonts.gstatic.com",
+          "script-src": "'self' www.google-analytics.com www.googletagmanager.com fonts.googleapis.com fonts.gstatic.com",
           "style-src": "'self' data: blob: 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com",
           "img-src": "'self' data: www.google-analytics.com",
           "font-src": "'self' fonts.gstatic.com",
