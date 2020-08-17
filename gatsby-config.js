@@ -205,5 +205,31 @@ module.exports = {
     },
     'gatsby-plugin-flow',
     'gatsby-plugin-optimize-svgs',
+    {
+      resolve: 'gatsby-plugin-sri',
+      options: {
+        hash: 'sha512', // 'sha256', 'sha384' or 'sha512' ('sha512' = default)
+        crossorigin: false // Optional
+      }
+    },
+    {
+      resolve: `gatsby-plugin-csp`,
+      options: {
+        disableOnDev: false,
+        reportOnly: false, // Changes header to Content-Security-Policy-Report-Only for csp testing purposes
+        mergeScriptHashes: true, // you can disable scripts sha256 hashes
+        mergeStyleHashes: true, // you can disable styles sha256 hashes
+        mergeDefaultDirectives: true,
+        directives: {
+          "script-src": "'self' www.google-analytics.com wwwgoogletagmanager.com fonts.googleapis.com fonts.gstatic.com",
+          "style-src": "'self' data: blob: 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com",
+          "img-src": "'self' data: www.google-analytics.com",
+          "font-src": "'self' fonts.gstatic.com",
+          "object-src": "'self' blob:",
+          "connect-src": "'self' blob: data: wss://infosecdecompress.com"
+          // you can add your directives or override defaults
+        }
+      }
+    }
   ]
 };
