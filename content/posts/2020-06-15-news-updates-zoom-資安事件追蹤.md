@@ -20,7 +20,7 @@ tags:
 
 **Zoom 誇大自己的安全性**
 
-* 號稱所有服務皆使用[點對點加密](ep4-do-we-need-vpn#end-to-end-encryption-點對點加密)，實際上視訊與音訊並沒有 (新聞連結：[The Intercept](https://theintercept.com/2020/03/31/zoom-meeting-encryption/))
+* 號稱所有服務皆使用[點對點加密](/ep4-do-we-need-vpn#end-to-end-encryption-點對點加密)，實際上視訊與音訊並沒有 (新聞連結：[The Intercept](https://theintercept.com/2020/03/31/zoom-meeting-encryption/))
 * 號稱使用AES-256加密法，實際上只使用了較弱的AES-128加密法 (新聞連結：[](https://www.ithome.com.tw/news/136762)[Citizen Lab](https://citizenlab.ca/2020/04/move-fast-roll-your-own-crypto-a-quick-look-at-the-confidentiality-of-zoom-meetings/))
 
 **個姿和隱私問題**
@@ -44,7 +44,7 @@ Zoom宣布實施90天資安計畫\
 **Zoom 5.0 發布** 2020 4月底
 
 * 改用較好的加密法 (AES-256 + GCM加密)
-* 在視訊與音訊推出[點對點加密](ep4-do-we-need-vpn#end-to-end-encryption-點對點加密)
+* 在視訊與音訊推出[點對點加密](/ep4-do-we-need-vpn#end-to-end-encryption-點對點加密)
 * 允許使用者選擇資料傳送的伺服器位置
 * 改善會議流程安全性
 
