@@ -227,7 +227,7 @@ module.exports = {
           "font-src": "'self' fonts.gstatic.com",
           "object-src": "'self' blob:",
           "connect-src": "'self' blob: data: wss://infosecdecompress.com",
-          "frame": "'self' www.youtube-nocookie.com"
+          "frame-src": "'self' www.youtube-nocookie.com"
           // you can add your directives or override defaults
         }
       }
