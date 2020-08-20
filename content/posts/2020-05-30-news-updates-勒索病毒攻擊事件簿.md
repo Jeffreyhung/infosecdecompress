@@ -1,6 +1,6 @@
 ---
 template: post
-title: News Updates - 勒索病毒攻擊事件簿
+title: 勒索病毒攻擊事件簿
 slug: newsupdates_ransomware
 draft: false
 date: 2020-05-30T01:51:08.293Z
