@@ -1,6 +1,6 @@
 ---
 template: post
-title: News Updates - Zoom 資安事件追蹤
+title: Zoom 資安事件追蹤
 slug: newsupdates_zoom
 draft: false
 date: 2020-06-15T11:04:02.777Z
