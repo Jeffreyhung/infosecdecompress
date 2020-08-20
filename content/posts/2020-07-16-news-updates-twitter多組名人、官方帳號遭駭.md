@@ -1,6 +1,6 @@
 ---
 template: post
-title: News Updates - Twitter多組名人、官方帳號遭駭
+title: Twitter多組名人、官方帳號遭駭
 slug: newsupdates_twitter_hacked_phishing_incident
 draft: false
 date: 2020-07-16T02:06:20.366Z
