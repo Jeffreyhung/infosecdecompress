@@ -1,6 +1,6 @@
 ---
 template: post
-title: News Updates - Firefox Send 暫時下架了
+title: Firefox Send 暫時下架了
 slug: newsupdates_firefoxsend
 draft: false
 date: 2020-07-08T14:05:43.914Z
