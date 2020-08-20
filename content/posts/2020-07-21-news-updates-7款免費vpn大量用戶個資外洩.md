@@ -1,6 +1,6 @@
 ---
 template: post
-title: News Updates - 7款免費VPN 外洩大量用戶個資
+title: 7款免費VPN 外洩大量用戶個資
 slug: newsupdates_vpn_data_breach
 draft: false
 date: 2020-07-21T00:00:27.850Z
