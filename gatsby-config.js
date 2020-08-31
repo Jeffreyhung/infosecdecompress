@@ -221,12 +221,12 @@ module.exports = {
         mergeStyleHashes: false, // you can disable styles sha256 hashes
         mergeDefaultDirectives: true,
         directives: {
-          "script-src": "'self' 'unsafe-inline' www.google-analytics.com www.googletagmanager.com fonts.googleapis.com fonts.gstatic.com",
+          "script-src": "'self' 'unsafe-inline' www.google-analytics.com www.googletagmanager.com fonts.googleapis.com fonts.gstatic.com ajax.cloudflare.com",
           "style-src": "'self' data: blob: 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com",
-          "img-src": "'self' data: www.google-analytics.com",
-          "font-src": "'self' fonts.gstatic.com",
+          "img-src": "'self' data: www.google-analytics.com stats.g.doubleclick.net",
+          "font-src": "'self' fonts.gstatic.com fonts.googleapis.com",
           "object-src": "'self' blob:",
-          "connect-src": "'self' blob: data: wss://infosecdecompress.com",
+          "connect-src": "'self' blob: data: wss://infosecdecompress.com www.google-analytics.com stats.g.doubleclick.net",
           "frame-src": "'self' www.youtube-nocookie.com"
           // you can add your directives or override defaults
         }
