@@ -231,6 +231,14 @@ module.exports = {
           // you can add your directives or override defaults
         }
       }
+    },
+    {
+      resolve: 'gatsby-plugin-security-txt',
+      options: {
+        contact: 'contact@infosecdecompress.com',
+        canonical: 'https://infosecdecompress.com/.well-known/security.txt',
+        languages: 'en, zh-Hant-TW'
+      }
     }
   ]
 };
