@@ -2,7 +2,7 @@
 template: post
 title: Made In Taiwan 的惡意檔案檢測服務 VirusCheck.tw
 slug: patches_viruscheck
-draft: true
+draft: false
 date: 2020-09-03T02:23:57.366Z
 description: |-
   還記得在EP5裡向大家介紹VirusTotal這個統整有害程式的資料庫嗎？其實台灣也有一個自己的Virus Check可以幫助你做惡意檔案檢測服務！
