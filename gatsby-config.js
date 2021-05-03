@@ -2,6 +2,7 @@
 
 const siteConfig = require('./config.js');
 const postCssPlugins = require('./postcss-config.js');
+const siteUrl = `https://infosecdecompress.com`;
 
 module.exports = {
   pathPrefix: siteConfig.pathPrefix,
@@ -13,13 +14,16 @@ module.exports = {
     disqusShortname: siteConfig.disqusShortname,
     menu: siteConfig.menu,
     author: siteConfig.author
+  },  
+  flags: {
+    PRESERVE_WEBPACK_CACHE: true
   },
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/content`,
-        name: 'pages'
+        path: `${__dirname}/static`,
+        name: 'assets'
       }
     },
     {
@@ -32,15 +36,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'css',
-        path: `${__dirname}/static/css`
+        path: `${__dirname}/content`,
+        name: 'pages'
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'assets',
-        path: `${__dirname}/static`
+        name: 'css',
+        path: `${__dirname}/static/css`
       }
     },
     {
@@ -58,16 +62,25 @@ module.exports = {
           }
         `,
         feeds: [{
-          serialize: ({ query: { site, allMarkdownRemark } }) => (
-            allMarkdownRemark.edges.map((edge) => ({
-              ...edge.node.frontmatter,
-              description: edge.node.frontmatter.description,
-              date: edge.node.frontmatter.date,
-              url: site.siteMetadata.site_url + edge.node.fields.slug,
-              guid: site.siteMetadata.site_url + edge.node.fields.slug,
-              custom_elements: [{ 'content:encoded': edge.node.html }]
-            }))
-          ),
+          serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                const siteUrl = site.siteMetadata.site_url;
+                let html = edge.node.html;
+                html = html
+                  .replace(/href="\//g, `href="${siteUrl}/`)
+                  .replace(/src="\//g, `src="${siteUrl}/`)
+                  .replace(/"\/static\//g, `"${siteUrl}/static/`)
+                  .replace(/,\s*\/static\//g, `,${siteUrl}/static/`);
+
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.frontmatter.description,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.site_url + edge.node.fields.slug,
+                  guid: site.siteMetadata.site_url + edge.node.fields.slug,
+                  custom_elements: [{ 'content:encoded': html }]
+                })
+              })
+            },
           query: `
               {
                 allMarkdownRemark(
@@ -99,6 +112,43 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-json-output`,
+      options: {
+        siteUrl: siteUrl,
+        graphQLQuery: `
+          {
+            allMarkdownRemark(
+              limit: 1000,
+              sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }
+              ) {
+              edges {
+                node {
+                  rawMarkdownBody
+                  fields { slug }
+                  frontmatter {
+                    title
+                  }
+                }
+              }
+            }
+          }
+        `,
+        serializeFeed: results => results.data.allMarkdownRemark.edges.map(({ node }) => ({
+          id: node.fields.slug,
+          url: siteUrl + node.fields.slug,
+          title: node.frontmatter.title,
+          // content: node.rawMarkdownBody.replace(/(\\r\\n)*|(\((.*?)\))|(\#*|\**)/g, ``)
+          content: node.rawMarkdownBody
+              .replace(/(\((.*?)\))|(\#)|(\*)|(\[)|(\])/g, ' ')
+              .replace(/(?:\\[rn]|[\r\n]+)|(\\)+/g,' ')
+              .replace(/\s\s+/g, ' ')
+        })),
+        nodesPerFeedFile: 500,
+      }
+    },
+    'gatsby-plugin-netlify-cms-paths',
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
@@ -114,7 +164,10 @@ module.exports = {
             options: {
               maxWidth: 960,
               withWebp: true,
-              ignoreFileExtensions: [],
+              linkImagesToOriginal: false,
+              disableBgImageOnAlpha: true,
+              disableBgImage: true, 
+              backgroundColor: `transparent`,
             }
           },
           {
@@ -136,7 +189,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        modulePath: `${__dirname}/src/cms/index.js`,
+        modulePath: `${__dirname}/src/cms/index.js`
       }
     },
     {
@@ -144,14 +197,14 @@ module.exports = {
       options: {
         trackingIds: [siteConfig.googleAnalyticsId],
         pluginConfig: {
-          head: true,
-        },
-      },
+          head: true
+        }
+      }
     },
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-		exclude: [`/404`, `/tag/*`, `/admin`,`/offline-plugin-app-shell-fallback`,``],
+		    exclude: [`/404`, `/tag/*`, `/category/*`, `/page/*`, `/admin`,`/offline-plugin-app-shell-fallback`, `/tags`, `/pages/success`],
         query: `
           {
             site {
@@ -192,27 +245,56 @@ module.exports = {
         icon: 'static/photo.jpg'
       },
     },
-    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+        workboxConfig: {
+          runtimeCaching: [{
+            // Use cacheFirst since these don't need to be revalidated (same RegExp
+            // and same reason as above)
+            urlPattern: /(\.js$|\.css$|[^:]static\/)/,
+            handler: 'CacheFirst',
+          },
+          {
+            // page-data.json files, static query results and app-data.json
+            // are not content hashed
+            urlPattern: /^https?:.*\/page-data\/.*\.json/,
+            handler: 'StaleWhileRevalidate',
+          },
+          {
+            // Add runtime caching of various other page resources
+            urlPattern: /^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
+            handler: 'StaleWhileRevalidate',
+          },
+          {
+            // Google Fonts CSS (doesn't end in .css so we need to specify it)
+            urlPattern: /^https?:\/\/fonts\.googleapis\.com\/css/,
+            handler: 'StaleWhileRevalidate',
+          },
+          ],
+        },
+      },
+    },
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-sass',
       options: {
+        implementation: require('sass'),
         postCssPlugins: [...postCssPlugins],
         cssLoaderOptions: {
-          camelCase: false,
+          camelCase: false
         }
       }
     },
-    'gatsby-plugin-flow',
-    'gatsby-plugin-optimize-svgs',
     {
-      resolve: 'gatsby-plugin-sri',
+      resolve: '@sentry/gatsby',
       options: {
-        hash: 'sha512', // 'sha256', 'sha384' or 'sha512' ('sha512' = default)
-        crossorigin: true // Optional
+        dsn: process.env.SENTRY_DSN,
+        tracesSampleRate: 1
       }
     },
+    'gatsby-plugin-flow',
     {
       resolve: `gatsby-plugin-csp`,
       options: {
@@ -220,13 +302,16 @@ module.exports = {
         reportOnly: false, // Changes header to Content-Security-Policy-Report-Only for csp testing purposes
         mergeScriptHashes: false, // you can disable scripts sha256 hashes
         mergeStyleHashes: false, // you can disable styles sha256 hashes
-        mergeDefaultDirectives: true,
+        mergeDefaultDirectives: true, 
         directives: {
-          "script-src": "'self' 'unsafe-inline' www.google-analytics.com www.googletagmanager.com fonts.googleapis.com fonts.gstatic.com ajax.cloudflare.com",
-          "style-src": "'self' data: blob: 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com",
-          "img-src": "'self' data: www.google-analytics.com stats.g.doubleclick.net",
+          "default-src": "'self'",
+          "script-src": "'self' 'unsafe-inline' 'unsafe-eval' www.google-analytics.com www.googletagmanager.com fonts.googleapis.com fonts.gstatic.com ajax.cloudflare.com static.cloudflareinsights.com",
+          "style-src": "'self' blob: 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com",
+          "img-src": "'self' www.google-analytics.com stats.g.doubleclick.net",
           "font-src": "'self' fonts.gstatic.com fonts.googleapis.com",
           "object-src": "'self' blob:",
+          "manifest-src": "'self'",
+          "prefetch-src": "'self' blob:",
           "connect-src": "'self' blob: data: wss://infosecdecompress.com www.google-analytics.com stats.g.doubleclick.net",
           "frame-src": "'self' www.youtube-nocookie.com"
           // you can add your directives or override defaults

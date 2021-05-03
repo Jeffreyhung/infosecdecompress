@@ -5,10 +5,10 @@ module.exports = {
   pathPrefix: '/',
   title: '資安解壓縮',
   subtitle: 'InfosecDecompress',
-  copyright: '©2020 資安解壓縮 InfosecDecompress',
+  copyright: 'Content is licensed under CC BY-SA 4.0',
   disqusShortname: '',
   postsPerPage: 10,
-  googleAnalyticsId: 'UA-145232119-2',
+  googleAnalyticsId: 'G-G73BYNCQRH',
   useKatex: false,
   menu: [
     {
@@ -16,14 +16,9 @@ module.exports = {
       path: '/'
     },
     {
-      label: '文章分類',
+      label: '分類標籤',
       path: '/categories'
     },
-    {
-      label: '文章標籤',
-      path: '/tags'
-    },
-    
     {
       label: '聯絡資訊',
       path: '/pages/contacts'

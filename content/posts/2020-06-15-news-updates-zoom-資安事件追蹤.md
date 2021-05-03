@@ -10,10 +10,9 @@ description: |-
   前陣子吵得沸沸揚揚的Zoom爭議事件，最近又因為六四紀念事件重新引起關注，我們簡單整理了一下發生了什麼事，一起來了解一下吧～
 category: NewsUpdates
 tags:
-  - zoom
-  - e2ee
+  - Zoom
+  - E2EE
   - privacy
-  - news updates
 ---
 ![](/media/zoom_cover.jpg)
 
@@ -24,7 +23,7 @@ tags:
 * 號稱所有服務皆使用[點對點加密](/posts/ep4-do-we-need-vpn#end-to-end-encryption-點對點加密)，實際上視訊與音訊並沒有 (新聞連結：[The Intercept](https://theintercept.com/2020/03/31/zoom-meeting-encryption/))
 * 號稱使用AES-256加密法，實際上只使用了較弱的AES-128加密法 (新聞連結：[](https://www.ithome.com.tw/news/136762)[Citizen Lab](https://citizenlab.ca/2020/04/move-fast-roll-your-own-crypto-a-quick-look-at-the-confidentiality-of-zoom-meetings/))
 
-**個姿和隱私問題**
+**個資和隱私問題**
 
 * 未告知用戶便向Facebook傳送用戶數據 (新聞連結：[](https://www.ithome.com.tw/news/136648)[Vice](https://www.vice.com/en_us/article/k7e599/zoom-ios-app-sends-data-to-facebook-even-if-you-dont-have-a-facebook-account))。
 * 透過中國伺服器傳送資訊，即便通話雙方都在北美洲 (新聞連結：[](https://www.ithome.com.tw/news/136762)[Citizen Lab](https://citizenlab.ca/2020/04/move-fast-roll-your-own-crypto-a-quick-look-at-the-confidentiality-of-zoom-meetings/))
